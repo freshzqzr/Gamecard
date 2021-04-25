@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Series Game Card!</title>
+    <script src="SolutionGamecard.js"></script>
+    <style>
+        
+        body {
+            margin: 0;
+        padding: 0;
+            background-image: linear-gradient(to left, rgba(245, 246, 252, 0.048), rgba(255, 12, 12, 0.411)), url("banner3.png");
+            background-position: center;
+    background-size: cover;
+        }
+
+        .container1 {
+            height: 40px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            color: white;
+            font-family: 'Zen Dots', cursive;
+    }
+        .space {
+        flex-grow: 8;
+    }
+    .indusbox{
+        height: 40px;
+        width: 100px;
+        flex-grow: 1;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .buttonmenu{
+    font-family: 'Zen Dots', cursive;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    }
+    .menubox {
+            height: 40px;
+            width: 100px;
+            flex-grow: 1;
+            text-align: end;
+            padding-right: 20px;
+            padding-top: 10px;
+    }
+        h1{
+            color: white;
+            font-family: 'Zen Dots', cursive;
+        }
+
+        h4{
+            color: white;
+            font-family: 'Zen Dots', cursive;
+        }
+        #hidden {
+            display: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto  ;
+            width: 1200px;
+            margin: auto auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="indusbox"> Cool TAB EIEI </div>
+        <div class="space"></div>
+        <div class="menubox"> <input type="button" value="Menu" class="buttonmenu" style="color: white;"> </div>
+    </div>
+
+<div class="title"> <br>
+    <center><h1>7 Series Game Card!</h1>
+    <h4>Score: <span id="gameScore"> 0 </span></h4>
+    <h4>Message:<span id="gameConsole"> Game start!</span></h4></center>
+</div> 
+<br>
+<div id="GameBoard"></div>
+    
+</body>
+</html>
